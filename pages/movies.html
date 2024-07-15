@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../asset/Moviestack_favicon.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MovieStack!</title>
+  </head>
+  <body class="bg-gray-900">
+    <header
+      class="border-8 border-yellow-600 border-solid flex justify-between items-center bg-gray-700"
+    >
+      <div class="flex w-80 gap-5 pl-5">
+        <img class="w-24" src="../asset/Moviestack_isotipo.png" alt="isotipo" />
+        <img
+          class="w-64 h-32 -ml-16 -mt-3"
+          src="../asset/Moviestack_logotipo2.png"
+          alt="moviestack"
+        />
+      </div>
+      <nav class="flex gap-5 h-10 mr-14">
+        <a class="p-2 text-white text-xl" href="../index.html">HOME</a>
+        <a
+          class="border-2 border-yellow-600 border-solid px-2 pt-1 font-bold text-white text-xl"
+          href="../pages/movies.html"
+          >MOVIES</a
+        >
+        <a class="p-2 text-white text-xl" href="#">FAVS</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 id="movies"
+          class="text-black font-bold text-7xl bg-gray-700 w-96 mx-auto text-center py-4 border-8 border-yellow-600 my-14"
+        >
+          Movies
+        </h1>
+        <div class="flex justify-center gap-10 mt-5">
+          <select class="font-bold bg-yellow-600 rounded-xl p-4 border-4 border-red-900 border-solid" id="seleccionGeneros">
+          
+          </select>
+          <input class="bg-yellow-600 text-bold p-4 border-4 border-red-900 border-solid" type="text" name="nombrePelicula" id="nombrePelicula" placeholder="Busque por nombre">
+        </div>
+        <div
+          id="contenedorMovies"
+          class="flex flex-wrap justify-evenly w-4/5 mx-auto gap-2 my-16"
+        ></div>
+      </section>
+    </main>
+    <footer
+      class="border-4 border-yellow-600 bg-gray-700 text-black font-bold text-center content-center h-14"
+    >
+      <span>William Jose Ocanto Hernandez. MindHub-Cohort 55</span>
+    </footer>
+    <script src="../Datos/data.js"></script>
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
